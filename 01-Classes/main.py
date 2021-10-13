@@ -1,26 +1,27 @@
 class Person:
     arms_count = 2
 
-    def __init__(self):
-        self.name = 'test'
+    def __init__(self, name):
+        self.name = name
 
     def greet(self):
         print(f'hi {self.name}!')
 
 
+    def __del__(self):
 
-me = Person()
-you = Person()
+
+
+me = Person('Nick')
+you = Person('Vasya')
 
 print(me.arms_count, you.arms_count)
 
 me.arms_count = 5
 print(me.arms_count, you.arms_count)
 
-me.name = 'nick'
-you.name = 'vasya'
 
-print(me.name,you.name)
+print(me.name, you.name)
 me.greet()
 you.greet()
 
