@@ -15,3 +15,5 @@ for i in range(n):
     time = [int(x) for x in input().split()]
     array.append(Driver(name, time))
 print(min(array).name)
+
+
