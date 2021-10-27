@@ -22,16 +22,16 @@ class Triangle:
         self.b = b
         self.c = c
 
-    def perimeter(self):
-        length = 0
-        
+    def perimeter(self,a,b,c):
+        length = a.distance(b) + b.distance(c) + c.distance(a)
 
 
 
-    def area (self):
-        # использовать периметр и найти площадь через формулу герона
+    def area (self,a,b,c):
+        p=self.perimeter(a,b,c)/2
+        area = (p*(p-a)*(p-b)*(p-c))**0.5
     def __contains__(self,point):
-        # модуль , который вызовет магический метод __contains__
+        s1 = 
         # сложить площади треугольников, если их сумма равна площади большого треугольника, то точка находится внутри треугольника
         # если точка находится на стороне треуг-ка, то площадь 1 из них = 0, площадь других = площади большого треуг-ка
 
