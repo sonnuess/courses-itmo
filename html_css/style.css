@@ -1,0 +1,23 @@
+p {
+    padding: 10px;
+    margin: 16px;
+    border: 8px green solid;
+    color: red
+}
+
+.primary-text {
+    color: white;
+    background-color: darkblue;
+    font-family: 'Comic Sans MC', serif;
+}
+
+#test_section {
+    font-weight: bold;
+    color: darker;
+    background-color: purple;
+}
+
+#test_section div {
+    padding: 16px;
+    border: 8px yellow dashed;
+}

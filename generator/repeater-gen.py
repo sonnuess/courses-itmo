@@ -25,6 +25,3 @@ def pow_twelve(max_pow: int) -> Iterator:
         cur_pow += 1
 
 
-# Выводим степени двойки от 2^0 до 2^10
-for i in pow_twelve(5):
-    print(i)
